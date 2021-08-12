@@ -283,7 +283,7 @@ li {
 .skillsList {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     align-items: center;
     justify-content: space-between;
     margin-left: -30px;
@@ -313,7 +313,7 @@ li {
 
 #flexC1{
     width: 33%;
-    text-align: center;
+    /* align-items: left; */
 }
 
 #flexC2{
@@ -323,7 +323,7 @@ li {
 
 #flexC3{
     width: 33%;
-    text-align: center;
+    /* align-items: center; */
 }
 
 p {
@@ -409,30 +409,38 @@ footer {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: black; /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
   }
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #fefefe;
+    background-color: white;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    /* border: .05px solid #888; */
+    border-radius: 20px;
+    width: 50%; /* Could be more or less, depending on screen size */
+     }
+
+  .modal-content p {
+      font-size: 14px;
+      text-align: left;
   }
   
   /* The Close Button */
   .close {
     color: #aaa;
     float: right;
-    font-size: 28px;
-    font-weight: bold;
+    font-family: poppins;
+    font-size: 24px;
+    font-weight: Bold;
   }
   
   .close:hover,
   .close:focus {
-    color: white;
+    color: black;
     text-decoration: none;
     cursor: pointer;
   }
@@ -491,7 +499,8 @@ footer {
     }
 
     h1 {
-        margin-left: -45%;
+        margin-left: 60px;
+        margin-right: auto;
     }
 
     .regButton {
